@@ -1,1 +1,14 @@
-<p>listado-cines works!</p>
+<h2>Listado cines</h2>
+<div *ngIf="!cines.length">No hay cines por el momento</div>
+<div>
+  <article *ngFor="let cine of cines">
+    <span>{{ cine.nombre }}</span>
+    <span>{{ cine.cif }}</span>
+    <span>{{ cine.direccion }}</span>
+    <span>{{ cine.email }}</span>
+    <span>{{ cine.codigoPostal }}</span>
+    <span>{{ cine.telefono }}</span>
+    <span>{{ cine.direccion }}</span>
+    <span>{{ cine.sala }}</span>
+  </article>
+</div>
