@@ -8,6 +8,6 @@ import { ListadoPeliculasComponent } from './listado-peliculas/listado-peliculas
   declarations: [AltaPeliculaComponent, ListadoPeliculasComponent],
   imports: [CommonModule, FormsModule],
   providers: [PeliculasService],
-  exports: [AltaPeliculaComponent],
+  exports: [AltaPeliculaComponent, ListadoPeliculasComponent],
 })
 export class PeliculasModule {}

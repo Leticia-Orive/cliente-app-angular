@@ -8,6 +8,6 @@ import { ListadoCinesComponent } from './listado-cines/listado-cines.component';
   declarations: [AltaCineComponent, ListadoCinesComponent],
   imports: [CommonModule, FormsModule],
   providers: [CineService],
-  exports: [AltaCineComponent],
+  exports: [AltaCineComponent, ListadoCinesComponent],
 })
 export class CinesModule {}
