@@ -1,1 +1,41 @@
-<p>alta-cine works!</p>
+<h2>Alta cine</h2>
+<p>
+  <span>Nombre:</span>
+  <input type="text" [(ngModel)]="cine.nombre" />
+</p>
+<p>
+  <span>CIF:</span>
+  <input type="text" [(ngModel)]="cine.cif" />
+</p>
+<p>
+  <span>Dirección:</span>
+  <input type="text" [(ngModel)]="cine.direccion" />
+</p>
+<p>
+  <span>Email:</span>
+  <input type="text" [(ngModel)]="cine.email" />
+</p>
+<p>
+  <span>Provincia:</span>
+  <input type="text" [(ngModel)]="cine.provincia" />
+</p>
+<p>
+  <span>Codigo Postal:</span>
+  <input type="text" [(ngModel)]="cine.codigoPostal" />
+</p>
+<p>
+  <span>Telefono:</span>
+  <input type="text" [(ngModel)]="cine.telefono" />
+</p>
+<p>
+  <span>Sala:</span>
+  <select [(ngModel)]="cine.sala">
+    <option *ngFor="let sala of sala" value="{{ sala.id }}">
+      {{ sala.nombre }}
+    </option>
+  </select>
+</p>
+<p>
+  <button (click)="this.nuevoCine()">Guardar</button>
+  <button (click)="this.nuevoCine()">Guardar</button>
+</p>

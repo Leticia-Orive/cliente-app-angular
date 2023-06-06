@@ -1,1 +1,25 @@
-<p>alta-pelicula works!</p>
+<h2>Alta pelicula</h2>
+<p>
+  <span>Titulo:</span>
+  <input type="text" [(ngModel)]="pelicula.titulo" />
+</p>
+<p>
+  <span>Director:</span>
+  <input type="text" [(ngModel)]="pelicula.director" />
+</p>
+<p>
+  <span>Genero:</span>
+  <input type="text" [(ngModel)]="pelicula.genero" />
+</p>
+<p>
+  <span>Actor:</span>
+  <input type="text" [(ngModel)]="pelicula.actor" />
+</p>
+<p>
+  <span>Fecha de estreno:</span>
+  <input type="text" [(ngModel)]="pelicula.fecha_estreno" />
+</p>
+
+<p>
+  <button (click)="this.nuevaPelicula()">Guardar</button>
+</p>
