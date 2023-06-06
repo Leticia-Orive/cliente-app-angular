@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CineService } from './cines.service';
+import { AltaCineComponent } from './alta-cine/alta-cine.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    AltaCineComponent
+  ],
   imports: [CommonModule],
   providers: [CineService],
 })
