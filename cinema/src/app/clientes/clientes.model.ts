@@ -7,14 +7,13 @@ export interface Cliente {
   provincia: string;
   codigoPostal: number;
   telefono: number;
-  id_grupo: number;
-  id_sala: number;
-  id_cine: number;
-  id_pelicula: number;
+  grupo: number;
+  sala: number;
+  cine: number;
+  pelicula: number;
 }
 
 export interface Grupo {
   id: number;
   nombre: string;
-  id_cliente: number;
 }

@@ -5,7 +5,7 @@ export interface Pelicula {
   genero: string;
   actor: string;
   fecha_estreno: number;
-  id_cliente: number;
-  id_sala: number;
-  id_cine: number;
+  cliente: string;
+  sala: number;
+  cine: number;
 }
