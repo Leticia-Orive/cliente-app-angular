@@ -8,10 +8,16 @@ import { ClientesService } from '../clientes.service';
   styleUrls: ['./listado-clientes.component.css'],
 })
 export class ListadoClientesComponent {
-  clientes!: Cliente[];
+  clientes: Cliente[] = [];
   constructor(private clientesService: ClientesService) {}
 
-  ngOnInit() {
-    this.clientes = this.clientesService.getClientes();
+  ngOnInit(): void {
+    this.obtenerClientes();
+  }
+
+  obtenerClientes(): void {
+    this.clientesService
+      .getClientes()
+      .subscribe((clientes) => (this.clientes = clientes));
   }
 }
