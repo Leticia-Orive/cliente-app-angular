@@ -9,7 +9,7 @@ export interface Cine {
   telefono: number;
   cliente: string;
   sala: number;
-  cine: number;
+
   pelicula: number;
 }
 

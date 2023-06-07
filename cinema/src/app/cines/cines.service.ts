@@ -52,7 +52,6 @@ export class CineService {
       telefono: 0,
       cliente: '',
       sala: 0,
-      cine: 0,
       pelicula: 0,
     };
   }
